@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class PersonCardService {
+export class PersonService {
 
   persons = [
     { 

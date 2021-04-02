@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PersonCardService } from '../person-card.service';
+import { PersonService } from '../person.service';
 
 @Component({
   selector: 'app-person-card',
@@ -10,10 +10,10 @@ export class PersonCardComponent implements OnInit {
 
   person : any = null
 
-  constructor(private personCardService : PersonCardService) { }
+  constructor(private personService : PersonService) { }
 
   ngOnInit(): void {
-    this.person = this.personCardService.getPersonData(2)
+    this.person = this.personService.getPersonData(2)
   }
 
   
