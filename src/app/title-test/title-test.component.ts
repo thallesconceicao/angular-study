@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-title-test',
   // templateUrl: './title-test.component.html',
   template: `
+    <h1>title</h1>
     <p>Component without archive</p>
   `,
   styleUrls: ['./title-test.component.css']
