@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { PersonService } from '../person.service';
 
 @Component({
@@ -8,14 +8,13 @@ import { PersonService } from '../person.service';
 })
 export class PersonCardComponent implements OnInit {
 
-  person : any = null
+  @Input() person: any
+  // person : any = null
 
   constructor(private personService : PersonService) { }
 
   ngOnInit(): void {
-    this.person = this.personService.getPersonData(2)
+    // this.person = this.personService.getPersonData(2)
   }
-
-  
 
 }
