@@ -9,12 +9,9 @@ import { PersonService } from '../person.service';
 export class PersonCardComponent implements OnInit {
 
   @Input() person: any
-  // person : any = null
 
   constructor(private personService : PersonService) { }
 
-  ngOnInit(): void {
-    // this.person = this.personService.getPersonData(2)
-  }
+  ngOnInit(): void {}
 
 }

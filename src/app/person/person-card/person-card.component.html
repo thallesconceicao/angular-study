@@ -1,5 +1,10 @@
 <div class="card-block">
-    <h1>{{person.name}}</h1>
-    <p>{{person.job}}</p>
-    <p>{{person.age}}</p>
+    <div class="card-left">
+        <img [src]="person.img">
+    </div>
+    <div class="card-right">
+        <h1>{{ person.name }}</h1>
+        <p>{{ person.job }}</p>
+        <p>{{ person.age }}</p>
+    <div>
 </div>

@@ -10,19 +10,22 @@ export class PersonService {
       id: 1,
       name: "Jonah",
       age: 25,
-      job: "Engineer"
+      job: "Engineer",
+      img: 'https://loremflickr.com/100/100/man/'
     },
     { 
       id: 2,
       name: "Mary",
       age: 16,
-      job: "Student"
+      job: "Student",
+      img: 'https://loremflickr.com/100/100/woman/'
     },
     { 
       id: 3,
       name: "Tommy",
       age: 31,
-      job: "Lawyer"
+      job: "Lawyer",
+      img: 'https://loremflickr.com/100/100/person/'
     }
   ]
 
