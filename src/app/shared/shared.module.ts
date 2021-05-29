@@ -1,19 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { NavComponent } from './nav/nav.component'
+
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { FooterComponent } from './footer/footer.component'
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent],
+  declarations: [HeaderComponent, FooterComponent, NavComponent],
   imports: [
     CommonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NavComponent
   ]
 })
 export class SharedModule { }
